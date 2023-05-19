@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="faixa">
+
+<p>Viva bem! </p>
+
+  </div>
+
+  <div id="faixa2">
+
+    <p>Aprenda a calcular seu IMC. </p>
+    
+      </div>
+    
+
+
+
+<section id="corpo">
+<img src="../form/dieta-e-exercicios-fisicos.webp" id="imagem">
+
+  <p>O que é IMC O IMC (Índice de Massa Corporal) é um cálculo universal adotado pela OMS (Organização Mundial da Saúde) para classificar padrões de saúde relacionados ao peso, como desnutrição e obesidade, principalmente em populações. A fórmula do IMC foi criada pelo matemático e astrônomo belga Lambert Adolphe Jacques Quételet em 1832 e recebeu originalmente o nome de "Índice de Quételet", mas foi rebatizada com o nome atual pela OMS em 1972. No entanto, o IMC não é um índice suficiente para determinar a saúde de uma pessoa, uma vez que não leva em consideração a composição corporal do indivíduo (quantidade de massa muscular e gordura), como aponta Bruno Geloneze, médico endocrinologista.</p>
+</section>
+
+<style>
+
+
+
+  div#faixa2{
+border: 20px solid  rgb(35, 119, 230);
+    background-color: rgb(35, 119, 230);
+    color: white;
+    margin-top: -149px;
+   
+    width: 529px;
+    margin-left: 680px;
+  }
+
+
+
+  div#faixa2 p {
+     font-size:39px;
+  }
+
+  
+
+  img#menu {
+    margin-top: 450px;
+  }
+
+
+  
+  section#corpo{
+    display: block;
+    width: 660px;
+   float: left;
+   margin-top: 230px;
+   margin-left: -40px;
+ 
+  }
+
+
+
+div#faixa{
+background-color: rgb(126, 231, 196);
+  color: black;
+ width: 645px;
+  height: 100px;
+  margin-top:-50px;
+  margin-bottom: 40px;
+}
+
+
+
+div#faixa p {
+  font-size:90px;
+  margin-left: 140px;
+  width: 450px;
+
+
+
+}
+
+  img#imagem{
+width: 610px;
+height: 390px;
+
+  margin-left: 50px;
+    margin-top:-240px;
+  }
+
+
+
+
+body {
+  background-color: rgb(0,0,0,.2);
+height: 650px;
+width: 850px;
+
+
+}
+
+p{
+text-align:justify;
+margin-left: 40px;
+font-size: 21px;
+}
+
+
+
+
+aside#lateral {
+  float: right;
+  display: block;
+  width: 450px;
+  margin-right: 430px;
+  margin-top: -360px;
+}
+
+
+
+iframe#iframe{
+height: 580px;
+  margin-top:-530px;
+width: 175px;
+  margin-left: 1080px;
+  overflow-y: hidden;
+
+
+  
+}
+
+div#teste {
+  margin-top: -562px;
+  margin-left: 640px;
+  width: 200px;
+  
+}
+
+div#teste input{
+  width: 70px;
+  margin-left: 70px;
+  padding: 10px;
+}
+
+
+div#mapa {
+  margin-top: -750px;
+  margin-left: 860px;
+}
+
+
+div#botao input{
+padding: 10px;
+width: 100px;
+margin-left: 65px;
+  margin-top: 30px;
+}
+
+
+div#resultado p{
+margin-left: 60px;
+
+}
+
+div#tudo {
+  border: 30 px solid red;
+}
+
+
+footer#rodape {
+  clear: both;
+
+  
+  
+}
+
+footer#rodape p {
+  text-align: center;
+  margin-left: 350px;
+  font-size: 15px;
+}
+
+input{
+  margin-left: 990px;
+}
+</style>
+
+<aside id="lateral">
+
+
+<script>
+
+function calcular(){
+          
+            altura=parseFloat(document.getElementById('Caltura').value);
+          peso=parseFloat(document.getElementById('Cpeso').value);
+          res1=(peso/(altura*altura))
+          res2=res1.toFixed(2)
+          document.getElementById('Ctotal').value=res2
+          }
+
+
+
+
+
+
+
+
+</script>
+
+<div id="mapa">
+  <img src="../form/menu.png" usemap="#meumapa" id="menu">
+
+</div>
+
+  <map name="meumapa">
+  
+<area shape="poly" coords="4,1,183,3,185,76,2,76" href="../form/iframe-IMC.html#um" target="janela">
+<area shape="poly" coords="9,97,179,97,180,160,8,159" href="../form/iframe-IMC.html#dois" target="janela">
+<area shape="poly" coords="8,185,80,185,181,251,8,250" href="../form/iframe-IMC.html#tres" target="janela">
+<area shape="poly" coords="9,278,178,277,178,339,8,430" href="../form/iframe-IMC.html#quatro" target="janela">
+<area shape="poly" coords="8,367,178,366,176,430,1,,430" href="../form/iframe-IMC.html#cinco" target="janela">
+<area shape="poly" coords="9,453,172,454,171,511,8,510" href="../form/iframe-IMC.html#seis" target="janela">
+
+  </map>
+
+  <iframe src="../form/iframe-IMC.html"  scrolling="no"  id="iframe"  name="janela" ></iframe>
+
+
+
+
+
+
+
+<div id="teste">  
+ 
+  <p><label for="Cpeso">Informe seu peso:</label></p>
+<input type="number" id="Cpeso" name="Tpeso" placeholder="Ex: 45,0" min="1" ><div id="kg" >
+
+
+
+    <p><label for="Caltura">Informe sua altura:</label></p>
+  <input type="number" id="Caltura" name="Taltura" placeholder="Ex:1,76" >
+
+
+</div>
+
+<div id="resultado">
+<p><label for="Ctotal">    Seu IMC é:</label></p>
+<input type="text" id="Ctotal" name="Ttotal"placeholder="Resultado"   readonly> 
+
+
+
+</div>
+
+
+<div id="botao">
+
+  <input type="button" value="calcular" onclick="calcular();">
+  
+</div>
+  
+</div>
+</aside>
+
+<footer id="rodape">
+
+<p>Desenvolvido por Fernando Costa - Copyright 2023</p>
+    <p>Contato :<a href="instagran.com">Instagran</a></p>
+
+
+</footer>
+</body>
+</html>
